@@ -1,0 +1,43 @@
+.learnButtonContent{
+    width: fit-content;
+    margin: 0px 10px;
+}
+.arrowBefore{
+    width: 0%;
+    overflow: hidden;
+    transition: all .3s;
+}
+.arrowAfter{
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s;
+}
+.buttonContainer{
+    background-color: #5A72A0;
+    padding: 20px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.learnButtonContainer{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #83B4FF;
+    padding: 0px 10px;
+
+    transition: all .3s;
+    cursor: pointer;
+}
+.learnButtonContainer:hover{
+    transform:translateX(3px);
+}
+.learnButtonContainer:hover .arrowBefore{
+    width: 15px;
+}
+.learnButtonContainer:hover .arrowAfter{
+    width: 0%;
+}
